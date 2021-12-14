@@ -13,6 +13,7 @@ The application includes two modules (client and server). For local developement
 ### SERVER SETUP
 
 - Rename `example.env` to `.env`
+- Modify Port on .env to 3002
 - Set mail related environment variables (I've tested with SendGrid and MailTrap)
 - Example data are included in `/src/seeders/`. You can import those data into mongodb via terminal or MongoDB Compass
   - From terminal, change directory into `seeders` folder. `cd ./src/seeders`
