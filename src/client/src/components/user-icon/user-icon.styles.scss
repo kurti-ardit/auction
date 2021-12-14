@@ -1,0 +1,40 @@
+@import '../../styles';
+
+.user-icon {
+  color: white;
+  font-weight: bold;
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+
+  .popup {
+    position: absolute;
+    right: 0;
+    top: 30px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: $primary-color;
+    box-shadow: 0px 0px 5px -1px #4b4b4b;
+    z-index: 100;
+
+    .popup-button {
+      background-color: $primary-color;
+      color: white;
+      border-radius: 5px;
+      border: none;
+      padding: 10px 50px;
+      font-family: 'Quicksand', sans-serif;
+      font-weight: bold;
+
+      &:not(:first-child) {
+        margin-top: 5px;
+      }
+
+      &:hover {
+        background-color: $primary-color-dark;
+      }
+    }
+  }
+}

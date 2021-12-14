@@ -1,0 +1,43 @@
+.item-detail {
+  .item-wrapper {
+    padding: 20px 60px;
+    display: flex;
+    flex-direction: row;
+
+    .left-side {
+      width: 65%;
+      margin-right: 20px;
+
+      .item-name {
+        font-weight: bold;
+        padding: 20px 0px;
+      }
+
+      .item-image {
+        max-width: 100%;
+      }
+    }
+
+    .right-side {
+      width: 35%;
+
+      .biddings-container {
+        height: 500px;
+        overflow-y: scroll;
+      }
+    }
+
+    @media screen and (max-width: 800px) {
+      flex-direction: column;
+
+      .left-side {
+        width: 100%;
+        margin-right: 0px;
+      }
+
+      .right-side {
+        width: 100%;
+      }
+    }
+  }
+}

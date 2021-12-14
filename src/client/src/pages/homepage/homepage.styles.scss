@@ -1,0 +1,46 @@
+@import '../../styles';
+
+.home {
+  padding-bottom: 25px;
+  .container {
+    padding: 0px 60px;
+
+    .home-title {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+
+      button {
+        height: 30px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        border-radius: 15px;
+        padding: 0px 10px;
+        background-color: $secondary-color;
+        color: $light-color;
+      }
+    }
+
+    .bids-wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      grid-gap: 15px;
+
+      @media screen and (max-width: 960px) {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      @media screen and (max-width: 600px) {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .item-pagination {
+      padding-top: 25px;
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
